@@ -63,6 +63,7 @@ const QuestionList = () => {
         <h1>Выберите Вопрос:</h1>
         <div className="buttons">
           <Button
+            className="item-1"
             onClick={() => setQuestion(question - 1)}
             disabled={question === 0}
           >
@@ -76,6 +77,7 @@ const QuestionList = () => {
             onChange={onChange}
             defaultValue={question}
             style={{ width: 320 }}
+            className="item-2"
             options={questions.map((el, i) => {
               return {
                 value: i,
@@ -84,6 +86,7 @@ const QuestionList = () => {
             })}
           />
           <Button
+            className="item-3"
             onClick={() => setQuestion(question + 1)}
             disabled={question === questions.length - 1}
           >

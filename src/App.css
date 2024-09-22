@@ -28,3 +28,17 @@ html, body {
   width: 100%;
   margin-bottom: 30px;
 }
+
+
+@media screen and (max-width: 500px) {
+  .buttons{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .item-1 {
+   order: 2;
+  }
+  .item-3 {
+   order: 3;
+  }
+}
